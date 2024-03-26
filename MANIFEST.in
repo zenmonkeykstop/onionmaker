@@ -1,0 +1,1 @@
+include onionmaker/ed25519/src/*.h

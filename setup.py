@@ -9,7 +9,6 @@ ed25519_ext = Extension(name='onionmaker.ed25519',
                                     glob.glob('onionmaker/ed25519/src/*.c')
                         ),
                         include_dirs=['onionmaker/ed25519/src'],
-                        headers=['onionmaker/ed25519/src/ed25519.h'],
                         libraries=[lib_name for lib_name in ['advapi32'] if platform.system() == 'Windows']
                         )
 
